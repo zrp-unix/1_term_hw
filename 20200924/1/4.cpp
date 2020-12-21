@@ -10,7 +10,7 @@ int main()
 	cin >> x;
 	p = x;
 	double e = 1.0, fact = 1.0,usl=1.0, eps = 0.000001;
-	for(int i = 1; usl >= eps; i++)
+	for(int i = 1;abs(usl) >= eps; i++)
 	{
 		fact *= i;
 		usl = x / fact; 
